@@ -35,12 +35,10 @@ ButtonState fake_getButtonState(int NumCalls) {
 }
 
 
-
-
 void setupFake(LEDState expLEDState[], int LEDMaxCalls, ButtonState buttState[], int ButtonMaxCalls) {
    turnLEDCallNumbers = 0;
    turnLED_StubWithCallback (fake_turnLED);
-   expectedLEDState - expLEDState;
+   expectedLEDState = expLEDState;
    expectedTurnLEDMaxCalls = LEDMaxCalls;
    getButtonState_StubWithCallback(fake_getButtonState);
    expectedbuttonState = buttState;
