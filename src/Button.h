@@ -13,7 +13,8 @@ typedef enum {
   FIRST = 1,
   SECOND,
 } ButtonTriggerStage;
-int getButtonState (void);
+
+ButtonState getButtonState (void);
 
 
 #endif // _BUTTON_H
